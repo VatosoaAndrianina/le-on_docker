@@ -1,36 +1,38 @@
 # leçon docker
-# Télécharger une image depuis Docker Hub
+1. Introduction
+Dans le domaine du développement informatique, on rencontre souvent des problèmes liés aux différences d’environnements entre les machines des développeurs et celles des serveurs de production. Pour répondre à ce besoin de cohérence, j’ai choisi d’étudier Docker, un outil moderne qui facilite la création et le déploiement d’applications de manière isolée et portable.
+## Télécharger une image depuis Docker Hub
 docker pull <nom_de_l_image>
 
-# Lister les images disponibles localement
+## Lister les images disponibles localement
 docker images
 
-# Supprimer une image
+##Supprimer une image
 docker rmi <image_id>
-# Exécuter un conteneur
+## Exécuter un conteneur
 docker run <options> <nom_image>
 
-# Exemple : lancer nginx sur le port 8080
+## Exemple : lancer nginx sur le port 8080
 docker run -d -p 8080:80 nginx
 
-# Lister les conteneurs en cours d'exécution
+## Lister les conteneurs en cours d'exécution
 docker ps
 
-# Lister tous les conteneurs (même ceux arrêtés)
+## Lister tous les conteneurs (même ceux arrêtés)
 docker ps -a
 
-# Arrêter un conteneur
+## Arrêter un conteneur
 docker stop <container_id>
 
-# Supprimer un conteneur
+## Supprimer un conteneur
 docker rm <container_id>
-# Créer un volume
+## Créer un volume
 docker volume create mon_volume
 
-# Lister les volumes
+## Lister les volumes
 docker volume ls
 
-# Supprimer un volume
+## Supprimer un volume
 docker volume rm mon_volume
 FROM node:18
 WORKDIR /app
@@ -57,9 +59,10 @@ tolérance = 5 - 3 = 2
 n = 5
 quorum = 3
 tolérance = 2
-# Vérifier l’espace utilisé par Docker
+## Vérifier l’espace utilisé par Docker
 docker system df
 
-# Supprimer les ressources inutilisées
+## Supprimer les ressources inutilisées
 docker system prune
+
 
