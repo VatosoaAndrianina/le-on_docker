@@ -1,3 +1,4 @@
+#RALAMBOMANANA Vatosoa Andrianina Fitiavana L1A 165/LA/24-25
 # leçon docker
 1. Introduction
 Dans le domaine du développement informatique, on rencontre souvent des problèmes liés aux différences d’environnements entre les machines des développeurs et celles des serveurs de production. Pour répondre à ce besoin de cohérence, j’ai choisi d’étudier Docker, un outil moderne qui facilite la création et le déploiement d’applications de manière isolée et portable.
